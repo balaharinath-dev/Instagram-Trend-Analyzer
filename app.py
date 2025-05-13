@@ -323,27 +323,27 @@ Make it comprehensive, engaging, and clearly structured in en-US English.
         "url_list": url_list
     }
     
-st.sidebar.markdown("""
-        <style>
-            .red-button {
-                display: inline-block;
-                padding: 0.5em 1em;
-                color: white !important;
-                background-color: orange !important;
-                border-radius: 15px !important;
-                text-decoration: none !important;
-                font-weight: bold;
-                text-align: center;
-                width: 30%;
-                margin-bottom: 10px;
-            }
-            .red-button:hover {
-                background-color: orange !important; /* darker on hover */
-            }
-        </style>
+# st.sidebar.markdown("""
+#         <style>
+#             .red-button {
+#                 display: inline-block;
+#                 padding: 0.5em 1em;
+#                 color: white !important;
+#                 background-color: orange !important;
+#                 border-radius: 15px !important;
+#                 text-decoration: none !important;
+#                 font-weight: bold;
+#                 text-align: center;
+#                 width: 30%;
+#                 margin-bottom: 10px;
+#             }
+#             .red-button:hover {
+#                 background-color: orange !important; /* darker on hover */
+#             }
+#         </style>
 
-        <a href="http://localhost:8501" target="_self" class="red-button">Back</a>
-    """, unsafe_allow_html=True)
+#         <a href="http://localhost:8501" target="_self" class="red-button">Back</a>
+#     """, unsafe_allow_html=True)
 
 # Sidebar UI with Instagram theme
 with st.sidebar:
