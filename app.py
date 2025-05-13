@@ -14,11 +14,11 @@ from collections import Counter
 
 # Load environment variables
 load_dotenv()
-subscription_key = os.getenv("SUBSCRIPTION_KEY")
-API_TOKEN = os.getenv("API_TOKEN")
-endpoint = os.getenv("AZURE_ENDPOINT")
-api_version = os.getenv("AZURE_API_VERSION")
-deployment = os.getenv("AZURE_DEPLOYMENT_NAME")
+subscription_key = st.secrets["SUBSCRIPTION_KEY"]
+API_TOKEN = st.secrets["API_TOKEN"]
+endpoint = st.secrets["AZURE_ENDPOINT"]
+api_version = st.secrets["AZURE_API_VERSION"]
+deployment = st.secrets["AZURE_DEPLOYMENT_NAME"]
 
 # Initialize model
 model = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0)
